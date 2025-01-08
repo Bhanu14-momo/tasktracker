@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthyBites</title>
+
+    <!-- Google Fonts for Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="EarthyBites.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">EarthyBites</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart-icon"><span class="material-symbols-outlined">shopping_cart</span> Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Dropdown (Initially Hidden) -->
+    <div id="cart-dropdown" class="cart-dropdown">
+        <h3>Your Cart</h3>
+        <ul id="cart-items">
+            <li>No items in your cart</li>
+        </ul>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Fresh, Organic & Healthy<br> Delivered to Your Doorstep!</h1>
+                <p>Explore a range of organic rice, plant-based milk, natural honey, and wholesome snacks fresh from the farm to your basket.</p>
+                <button class="btn-primary">Shop Now</button>
+            </div>
+            <img src="org.jpg" alt="Organic Products" class="home-img">
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="container swiper">
+                <div class="card-wrapper swiper-wrapper">
+                    <!-- Feature Cards -->
+                    <div class="card-item swiper-slide" data-product="Natural Honey">
+                        <img src="org.jpg" alt="Natural Honey" class="card-img">
+                        <h3>Natural Honey</h3>
+                        <p>100% pure, organic honey straight from the hives.</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                    <div class="card-item swiper-slide" data-product="Healthy Snacks">
+                        <img src="org.jpg" alt="Healthy Snacks" class="card-img">
+                        <h3>Healthy Snacks</h3>
+                        <p>Wholesome, nutritious snacks to keep you energized.</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                    <div class="card-item swiper-slide" data-product="Plant-Based Milk">
+                        <img src="org.jpg" alt="Plant-Based Milk" class="card-img">
+                        <h3>Plant-Based Milk</h3>
+                        <p>Dairy-free, healthy alternatives for a sustainable future.</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                    <div class="card-item swiper-slide" data-product="Organic Rice">
+                        <img src="org.jpg" alt="Organic Rice" class="card-img">
+                        <h3>Organic Rice</h3>
+                        <p>Grown naturally, free from chemicals and pesticides.</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section id="offers" class="offers">
+            <h2>Exclusive Offers</h2>
+            <div class="offer-wrapper">
+                <div class="offer-item">
+                    <img src="org.jpg" alt="20% Off on Natural Honey">
+                    <h3>20% Off on Natural Honey</h3>
+                    <p>Enjoy the purest honey with a special discount. Limited time only!</p>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+                <div class="offer-item">
+                    <img src="org.jpg" alt="Buy 1 Get 1 Free on Plant-Based Milk">
+                    <h3>Buy 1 Get 1 Free on Plant-Based Milk</h3>
+                    <p>A healthy deal for a healthier you. Grab it now!</p>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+                <div class="offer-item">
+                    <img src="org.jpg" alt="Flat 15% Off on Organic Rice">
+                    <h3>Flat 15% Off on Organic Rice</h3>
+                    <p>Switch to organic with this exclusive offer.</p>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About EarthyBites</h3>
+                <p>EarthyBites is your go-to destination for fresh, organic, and healthy products. Our mission is to promote sustainable living with farm-to-basket solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@earthybites.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+                <p>Address: 123 Green Street, NatureVille</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EarthyBites. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        });
+
+        // Initialize Swiper
+        new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        document.getElementById('cart-icon').addEventListener('click', function () {
+            const cartDropdown = document.getElementById('cart-dropdown');
+            cartDropdown.classList.toggle('active');
+        });
+
+        // Cart item structure (You can replace it with actual products added to the cart)
+        let cartItems = [];
+
+        // Function to add an item to the cart
+        function addToCart(itemName) {
+            cartItems.push(itemName);
+            updateCart();
+        }
+
+        // Function to update the cart UI
+        function updateCart() {
+            const cartCount = document.getElementById('cart-count');
+            const cartItemsList = document.getElementById('cart-items');
+            cartItemsList.innerHTML = ''; // Clear the current list
+
+            if (cartItems.length === 0) {
+                cartItemsList.innerHTML = '<li>No items in your cart</li>';
+            } else {
+                cartItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    cartItemsList.appendChild(listItem);
+                });
+            }
+
+            cartCount.textContent = cartItems.length;
+        }
+
+        // Example usage: Add an item to the cart when the "Add to Cart" button is clicked
+        document.querySelectorAll('.btn-secondary').forEach(button => {
+            button.addEventListener('click', function () {
+                const itemName = this.parentElement.getAttribute('data-product');
+                addToCart(itemName);
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-FvRgzfMnpselNuUmdvKHZ40jhlvX4WRTF8OSUeISDNxkDyto4xkx1lOlk2nNjFZf" crossorigin="anonymous">
+</head>
+<body>
+    <header class="hero">
+        <a href="#" class="logo">TaskTracker</a>
+        <nav>
+            <ul class="nav">
+                <li><a href="#todolist">TodoList</a></li>
+                <li><a href="#collector">Collector</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#contactus">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Description Section -->
+    <section class="hero-description">
+        <p class="hero-text">TaskTracker is a tool to organize tasks, track progress, and manage deadlines efficiently.</p>
+        <img class="hero-image" src="https://th.bing.com/th/id/OIP.jlptSwpplo5Y8HkeOBmTpgAAAA?pid=ImgDet&w=176&h=176&c=7&dpr=1.5" alt="Task Tracker Icon">
+    </section>
+    
+
+    <!-- Todo List Section -->
+    <section id="todolist" class="section">
+        <h2>Todo List</h2>
+        <p><i class="fa-solid fa-fire fa-flip-horizontal"></i> Streak</p>
+        <form>
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" placeholder="Enter your task..." required>
+            <button type="button" id="btn">Add</button>
+        </form>
+        <div class="task1" id="tasksContainer"></div>
+
+        <!-- Calendar -->
+        <div class="calendar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                    <tr><td>29</td><td>30</td><td>31</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Collector Section -->
+    <!-- Collector Section -->
+<section id="collector">
+    <h2>Collector</h2>
+    <h3>My Library</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                    <td><input type="text" placeholder="Enter Data"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="section">
+        <h2>Showcase</h2>
+        <!-- Calculator -->
+        <div class="iframe-container">
+            <iframe src="ramenbowl.html" title="Calculator Demo"></iframe>
+            <p>Calculator</p>
+        </div>
+        <!-- Flex Layout -->
+        <div class="iframe-container">
+            <iframe src="flex.html" title="Flexbox Layout Demo"></iframe>
+            <p>Flex Layout</p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="frm1.html" title="Form1"></iframe>
+            <p>Registration form</p>
+        </div>
+        <!-- Login Form -->
+        <div class="iframe-container">
+            <iframe src="EarthyBites.html" title="Login Form Demo"></iframe>
+            <p>EartyBites</p>
+        </div>
+    </section>
+    
+    <!-- Contact Us Section -->
+    <section id="contactus" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" spellcheck="false" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <a href="#">Already have an account?</a>
+        <a href="#">Forgot Password</a>
+    </section>
+    
+    <script>
+        // Form submission handler
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            // Prevent default submission
+            event.preventDefault();
+            
+            // Validate form
+            if (validateForm()) {
+                var name = document.getElementById("name").value;
+                alert("Welcome, " + name);
+            }
+        });
+    
+        // Validation function
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+    
+            // Name validation
+            if (name === "") {
+                alert("Enter your name.");
+                return false;
+            }
+    
+            // Email validation
+            if (!validateEmail(email)) {
+                alert("Enter a valid email address.");
+                return false;
+            }
+    
+            // Password validation
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+    
+            return true;
+        }
+    
+        // Email validation function
+        function validateEmail(email) {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return regex.test(email);
+        }
+    </script>
+    
+</body>
+</html>
