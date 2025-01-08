@@ -1,0 +1,323 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.hero {
+    background-color: #608342;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.hero .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero .nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.hero .nav li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Section Styling */
+.section {
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+/* Hero Description */
+.hero-description {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-description img {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    background-color: #608342;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4a682d;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #608342;
+    color: white;
+}
+
+/* Calendar */
+.calendar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Iframe Containers */
+.iframe-container {
+    margin-top: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .nav li a {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .calendar table {
+        font-size: 14px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    .hero {
+        padding: 15px;
+    }
+
+    .hero .logo {
+        font-size: 20px;
+    }
+
+    .hero .nav {
+        gap: 8px;
+    }
+
+    .hero .nav li a {
+        padding: 8px 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* Desktop: 1200px and above */
+@media (min-width: 1200px) {
+    .section {
+        max-width: 1000px;
+    }
+
+    .hero .nav li a {
+        padding: 12px 25px;
+    }
+}
+/* Collector Section */
+#collector {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#collector h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #608342;
+}
+
+#collector h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto; /* Allows scrolling on smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #608342;
+    color: white;
+}
+
+table td input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #collector {
+        padding: 20px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    table td input {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    #collector {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    table td input {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

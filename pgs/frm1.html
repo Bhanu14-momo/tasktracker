@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="frm1.css">
+</head>
+<body>
+    <form>
+        <table border="0">
+            <tr><td><h1>Registration Form</h1></td></tr>
+            <tr><td>Firstname: <input type="text" name="firstname" id="firstname" required></td></tr>
+            <tr><td>Lastname: <input type="text" name="lastname" id="lastname"></td></tr>
+            <tr><td>DOB: <input type="date" name="dob" id="dob" required></td></tr>
+            <tr>
+                <td>Gender: <br><br>
+                    <input type="radio" name="gender" value="r1"> Female  
+                    <input type="radio" name="gender" value="r1"> Male
+                    <input type="radio" name="gender" value="r1"> Others
+                </td>
+            </tr>
+            <tr><td>Qualification: <input type="text" name="qualification" id="qualification" required></td></tr>
+            <tr>
+                <td>Skills: 
+                    <select name="skills" id="skills" required>
+                        <option value="">--SELECT--</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="DBMS">DBMS</option>
+                        <option value="Data science">Data Science</option>
+                        <option value="PHP">PHP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Languages: <input type="text" name="languages" id="languages" required></td></tr>
+            <tr><td>Databases: <input type="text" name="databases" id="databases" required></td></tr>
+            <tr>
+                <td>
+                    Post Resume: <input type="file" name="resumeFile" id="resumeFile" required><br><br>
+                    Paste Resume: <textarea name="resumePaste" id="resumePaste" rows="7" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Location: 
+                    <select name="location" id="location" required>
+                        <option value="">--SELECT--</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>URL: <input type="url" name="url" id="url" placeholder="http(s)://www.abc.com" title="http(s)://www.abc.com"></td></tr>
+            <tr><td>Email: <input type="email" name="email" id="email" placeholder="abcdee@gmail.com" required></td></tr>
+            <tr><td>Mobile: <input type="tel" name="mobile" id="mobile" placeholder="Enter mobile number (10 digits)" required></td></tr>
+            <tr><td>Declaration: <textarea name="declaration" id="declaration" required></textarea></td></tr>
+        </table>
+        <button type="reset">Reset</button><br><br>
+        <center><button type="submit">Submit</button></center>
+    </form>
+</body>
+</html>
